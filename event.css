@@ -1,0 +1,210 @@
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+ 
+header ul li a:hover {
+    background-color: white;
+    color: black;
+}
+header {
+    height: 100px;
+    background-color: #023e8a;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ 
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+ 
+.image-section {
+    height: 350px;
+    background-image: url("image3.jpg"); /* Replace "your-image.jpg" with the actual path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-align: center;
+}
+
+.image-section h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ 
+.home {
+    background-color: green;  
+}
+ 
+.home h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+ 
+.about {
+    background-color:green;  
+}
+
+ 
+.about h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+ 
+.slideshow-container {
+    margin: 30px auto;  
+}
+
+.slideshow {
+    display: flex;
+    overflow:scroll;
+    height: 300px;  
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slide 3s infinite;
+}
+
+
+.events {
+    background-color: #023e8a; 
+    padding: 20px;
+}
+
+.events h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.event h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ 
+.registration-link {
+    text-align: center;
+}
+
+.registration-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.registration-link a:hover {
+    background-color: #45a049;
+}
+
+
+.contact {
+    background-color:#023e8a;  
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Starting position */
+    }
+    33.333% {
+        transform: translateX(-100%); /* Slide to the left after 3.333 seconds (1 image duration) */
+    }
+    66.666% {
+        transform: translateX(-200%); /* Slide to the left after 6.666 seconds (2 image duration) */
+    }
+    100% {
+        transform: translateX(0); /* Slide back to the first image after 5 seconds (3 image duration) */
+    }
+}
